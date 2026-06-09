@@ -1,1 +1,514 @@
+/* ============================================
+   SUSTENWATER - ESTILOS PRINCIPAIS
+   Cores: Azul e Verde (Conscientização ambiental)
+   ============================================ */
 
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #1a3a2a;
+    background-color: #f0f7f0;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+    background: linear-gradient(135deg, #0d6b3e 0%, #1a8c4a 100%);
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Menu de navegação */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* ===== SEÇÕES GERAIS ===== */
+.secao {
+    padding: 60px 0;
+    border-bottom: 1px solid #c8e6d9;
+}
+
+.secao h2 {
+    font-size: 2rem;
+    color: #0d6b3e;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* SEÇÃO INÍCIO */
+.inicio {
+    background: linear-gradient(120deg, #e8f5e9 0%, #c8e6d9 100%);
+}
+
+.inicio .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.inicio-conteudo {
+    flex: 1;
+}
+
+.inicio-conteudo h2 {
+    font-size: 2.2rem;
+    color: #0d6b3e;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.inicio-conteudo h3 {
+    font-size: 1.5rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.inicio-conteudo p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.botao-principal {
+    display: inline-block;
+    background-color: #0d6b3e;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.botao-principal:hover {
+    background-color: #1a8c4a;
+    transform: scale(1.05);
+}
+
+.inicio-imagem {
+    flex: 1;
+    text-align: center;
+}
+
+.inicio-imagem img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Cards da seção SOBRE */
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border-left: 5px solid #0d6b3e;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #0d6b3e;
+    margin-bottom: 15px;
+}
+
+/* SEÇÃO PROBLEMA */
+.problema {
+    background-color: #fff8e1;
+}
+
+.problema-conteudo {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.problema-texto {
+    flex: 1;
+}
+
+.problema-texto ul {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.problema-texto li {
+    margin: 10px 0;
+}
+
+.problema-imagem {
+    flex: 1;
+    text-align: center;
+}
+
+.problema-imagem img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.credito-imagem {
+    font-size: 0.7rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* SEÇÃO QUIZ */
+.quiz {
+    background-color: #e0f2f1;
+}
+
+.pergunta {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pergunta h3 {
+    color: #0d6b3e;
+    margin-bottom: 15px;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.opcao:hover {
+    background-color: #e8f5e9;
+}
+
+.opcao input {
+    cursor: pointer;
+}
+
+.opcao label {
+    cursor: pointer;
+    flex: 1;
+}
+
+.botao-enviar {
+    background-color: #0d6b3e;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.botao-enviar:hover {
+    background-color: #1a8c4a;
+}
+
+.resultado {
+    margin-top: 25px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* SEÇÃO DICAS */
+.dicas {
+    background-color: #f1f8e9;
+}
+
+.gerador-dicas {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.botao-dica {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.botao-dica:hover {
+    background-color: #0277bd;
+    transform: scale(1.05);
+}
+
+.dica-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-left: 5px solid #0288d1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* SEÇÃO CONCLUSÃO */
+.conclusao {
+    background: linear-gradient(135deg, #0d6b3e 0%, #1a8c4a 100%);
+    color: white;
+}
+
+.conclusao h2 {
+    color: white;
+}
+
+.conclusao-conteudo {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.conclusao-conteudo p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.mensagem-final {
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #1a3a2a;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+/* ===== ACESSIBILIDADE ===== */
+.acessibilidade-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#btn-acessibilidade {
+    background-color: #0d6b3e;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+
+#btn-acessibilidade:hover {
+    background-color: #1a8c4a;
+}
+
+.menu-acessibilidade {
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+    overflow: hidden;
+}
+
+.menu-acessibilidade button {
+    background: white;
+    border: none;
+    padding: 12px 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+}
+
+.menu-acessibilidade button:hover {
+    background-color: #e8f5e9;
+}
+
+.escondido {
+    display: none;
+}
+
+/* MODO ALTO CONTRASTE */
+.alto-contraste {
+    background-color: black !important;
+    color: yellow !important;
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .secao {
+    background-color: black !important;
+    color: yellow !important;
+    border-color: yellow !important;
+}
+
+.alto-contraste .card,
+.alto-contraste .pergunta,
+.alto-contraste .dica-card {
+    background-color: #222 !important;
+    color: yellow !important;
+    border-color: yellow !important;
+}
+
+.alto-contraste a,
+.alto-contraste button {
+    color: yellow !important;
+    border-color: yellow !important;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    nav ul {
+        justify-content: center;
+    }
+    
+    .secao h2 {
+        font-size: 1.6rem;
+    }
+    
+    .inicio .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .inicio-conteudo h2 {
+        text-align: center;
+    }
+    
+    .cards {
+        flex-direction: column;
+    }
+    
+    .problema-conteudo {
+        flex-direction: column;
+    }
+    
+    .botao-dica {
+        width: 100%;
+    }
+    
+    .menu-acessibilidade {
+        right: 0;
+        left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .secao {
+        padding: 40px 0;
+    }
+    
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+    
+    nav ul {
+        gap: 12px;
+    }
+    
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+}
