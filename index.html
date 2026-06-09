@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Sustenwater - Conscientização sobre o uso sustentável da água na agricultura">
+    <title>Sustenwater | Água Sustentável na Agricultura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- CABEÇALHO DO SITE -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🌊 SUSTENWATER</h1>
+                <p>Água que sustenta o futuro</p>
+            </div>
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#problema">Problema</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#dicas">Dicas</a></li>
+                    <li><a href="#conclusao">Conclusão</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- SEÇÃO 1: INÍCIO -->
+        <section id="inicio" class="secao inicio">
+            <div class="container">
+                <div class="inicio-conteudo">
+                    <h2>Agro forte, futuro sustentável</h2>
+                    <h3>🌱 Equilíbrio entre produção e meio ambiente</h3>
+                    <p>A água é o recurso mais valioso para a agricultura. Aprenda como utilizá-la de forma consciente e sustentável.</p>
+                    <a href="#quiz" class="botao-principal">Teste seus conhecimentos →</a>
+                </div>
+                <div class="inicio-imagem">
+                    <!-- Imagem ilustrativa - substitua pelo caminho da sua imagem -->
+                    <img src="https://images.pexels.com/photos/235731/pexels-photo-235731.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Irrigação sustentável no campo" loading="lazy">
+                    <p class="credito-imagem">Imagem: Pexels (Free use)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: SOBRE O TEMA -->
+        <section id="sobre" class="secao sobre">
+            <div class="container">
+                <h2>💧 Sobre o tema</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>🚜 Agricultura e água</h3>
+                        <p>A agricultura consome cerca de 70% de toda água doce utilizada no mundo. Essa água é essencial para produzir os alimentos que chegam à sua mesa.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🌍 Sustentabilidade</h3>
+                        <p>Agricultura sustentável é aquela que produz alimentos sem esgotar os recursos naturais, garantindo água para as futuras gerações.</p>
+                    </div>
+                    <div class="card">
+                        <h3>⚖️ Equilíbrio</h3>
+                        <p>É possível produzir muito e ainda assim preservar o meio ambiente. Basta adotar técnicas inteligentes de uso da água.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: PROBLEMA AMBIENTAL -->
+        <section id="problema" class="secao problema">
+            <div class="container">
+                <h2>⚠️ O problema: desperdício de água na agricultura</h2>
+                <div class="problema-conteudo">
+                    <div class="problema-texto">
+                        <p><strong>Você sabia?</strong> Até 60% da água usada na irrigação é desperdiçada devido a técnicas ineficientes, vazamentos e evaporação.</p>
+                        <ul>
+                            <li>🚱 Uma torneira gotejando desperdiça 46 litros por dia</li>
+                            <li>💧 Irrigação por inundação usa 3x mais água que o necessário</li>
+                            <li>🌡️ Evaporação pode perder até 40% da água em dias quentes</li>
+                            <li>📉 1/3 da população mundial vive em áreas com estresse hídrico</li>
+                        </ul>
+                        <p>O futuro da agricultura depende da conscientização e adoção de práticas sustentáveis.</p>
+                    </div>
+                    <div class="problema-imagem">
+                        <img src="https://images.pexels.com/photos/939326/pexels-photo-939326.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Terra seca e rachada representando falta de água" loading="lazy">
+                        <p class="credito-imagem">Imagem: Pexels</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: QUIZ INTERATIVO -->
+        <section id="quiz" class="secao quiz">
+            <div class="container">
+                <h2>📝 Quiz da sustentabilidade da água</h2>
+                <p>Teste seus conhecimentos sobre o uso consciente da água na agricultura!</p>
+                
+                <div id="quiz-container">
+                    <!-- As perguntas serão inseridas via JavaScript -->
+                </div>
+                
+                <div id="resultado-quiz" class="resultado"></div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5: GERADOR DE DICAS SUSTENTÁVEIS -->
+        <section id="dicas" class="secao dicas">
+            <div class="container">
+                <h2>💡 Gerador de dicas sustentáveis</h2>
+                <p>Clique no botão abaixo e receba uma dica para economizar água na agricultura.</p>
+                
+                <div class="gerador-dicas">
+                    <button id="btn-gerar-dica" class="botao-dica">🔍 Gerar dica sustentável</button>
+                    <div id="dica-exibida" class="dica-card">
+                        Clique no botão para receber sua primeira dica!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 6: CONCLUSÃO -->
+        <section id="conclusao" class="secao conclusao">
+            <div class="container">
+                <h2>🌎 Conclusão</h2>
+                <div class="conclusao-conteudo">
+                    <p><strong>Sustenwater</strong> acredita que um <strong>agro forte</strong> anda lado a lado com um <strong>futuro sustentável</strong>.</p>
+                    <p>Pequenas mudanças nas técnicas de irrigação e no uso da água podem gerar grandes impactos positivos para o meio ambiente e para a produção de alimentos.</p>
+                    <p>Compartilhe esse conhecimento com agricultores, estudantes e sua comunidade. Juntos, podemos construir um futuro onde a água nunca falte.</p>
+                    <div class="mensagem-final">
+                        💙🌱💧
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Sustenwater - Projeto Agrinho 2026</p>
+            <p>Desenvolvido por Thales Lima Souza | Concurso de Programação Front-End</p>
+            <p>Tema: "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"</p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO DE ACESSIBILIDADE (FIXO) -->
+    <div id="botao-acessibilidade" class="acessibilidade-btn">
+        <button id="btn-acessibilidade">♿ Acessibilidade</button>
+        <div id="menu-acessibilidade" class="menu-acessibilidade escondido">
+            <button id="aumentar-fonte">A+ Aumentar fonte</button>
+            <button id="diminuir-fonte">A- Diminuir fonte</button>
+            <button id="alto-contraste">🌓 Alto contraste</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
